@@ -28,7 +28,7 @@ public class GoogleSearchStepDefinitions {
     $$("#res .g").shouldHave(size(resultsCount));
   }
 
-  @Then("the first one should contain (\\d+)")
+  @Then("the first one should contain (.*)")
   public void theFirstOneShouldContainKeyword(String expectedText) {
     $("#res .g").shouldHave(text(expectedText));
   }
